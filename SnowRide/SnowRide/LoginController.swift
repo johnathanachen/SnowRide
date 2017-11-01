@@ -8,12 +8,22 @@
 
 import UIKit
 
-class LoginController: UIViewController {
-
+class LoginController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var usrDetails: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+
     }
-
-
+    
+    // Placeholder to format view cells
+    let userDetails = [
+        "name",
+        "phoneNum",
+        "email",
+    ]
+    
 }
 
