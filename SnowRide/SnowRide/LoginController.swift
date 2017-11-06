@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LoginController: UIViewController  {
     
     @IBOutlet weak var usrDetails: UITableView!
     
