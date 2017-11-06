@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DE8DFCBB84B05BC055D2D77 /* Pods_SnowRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63270DA31942842AA1A24261 /* Pods_SnowRide.framework */; };
-		B83784751FA13A9500E82E80 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */; };
+		B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileVC.swift */; };
 		B83784771FA13B6900E82E80 /* PickScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */; };
 		B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */; };
 		B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */; };
@@ -25,7 +25,7 @@
 		63270DA31942842AA1A24261 /* Pods_SnowRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6853AD1BB7E93B08D0126533 /* Pods-SnowRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowRide.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide.release.xcconfig"; sourceTree = "<group>"; };
 		ACF034D5DBCE83A79C249BF6 /* Pods-SnowRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowRide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide.debug.xcconfig"; sourceTree = "<group>"; };
-		B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		B83784741FA13A9500E82E80 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleViewController.swift; sourceTree = "<group>"; };
 		B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialMatchesTableViewController.swift; sourceTree = "<group>"; };
 		B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMatchViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			children = (
 				B83B30771FA00AB600903B24 /* AppDelegate.swift */,
 				B83B30791FA00AB600903B24 /* LoginController.swift */,
-				B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */,
+				B83784741FA13A9500E82E80 /* ProfileVC.swift */,
 				B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */,
 				B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */,
 				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
@@ -247,7 +247,7 @@
 				B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */,
 				B83B307A1FA00AB600903B24 /* LoginController.swift in Sources */,
 				B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */,
-				B83784751FA13A9500E82E80 /* ProfileTableViewController.swift in Sources */,
+				B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */,
 				B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

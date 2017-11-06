@@ -5,9 +5,15 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -64,7 +70,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login / Register"/>
                                 <connections>
-                                    <segue destination="oED-QF-ok8" kind="show" id="h0b-ID-cYQ"/>
+                                    <segue destination="zpT-jf-dfR" kind="show" id="Qlj-8H-Gh3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,33 +105,66 @@
             </objects>
             <point key="canvasLocation" x="440.80000000000001" y="-824.43778110944538"/>
         </scene>
-        <!--Profile Table View Controller-->
-        <scene sceneID="fiM-G9-T36">
+        <!--ProfileVC-->
+        <scene sceneID="BuD-N2-OEf">
             <objects>
-                <tableViewController id="oED-QF-ok8" customClass="ProfileTableViewController" customModule="SnowRide" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6ky-le-mA3">
+                <viewController id="zpT-jf-dfR" userLabel="ProfileVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ON9-DG-Ddq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-gU-ZLa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="207"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-pE-yAO">
+                                <rect key="frame" x="98" y="177" width="179" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wp-47-sT4">
+                                <rect key="frame" x="98" y="358" width="179" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-4f-Te1">
+                                <rect key="frame" x="16" y="491" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.1130518839" green="0.1049865261" blue="0.26296675209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Cs-Tm-had"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98031669860000004" green="0.97607129810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search Trips"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-ZB-u3u">
+                                <rect key="frame" x="16" y="549" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.6256684065" green="0.26313152909999998" blue="0.30483821030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MXw-zQ-NqY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98031669860000004" green="0.97607129810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Book Trip"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iNa-o4-13V">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iNa-o4-13V" id="SYe-r5-P8A">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="oED-QF-ok8" id="XLh-9P-pSH"/>
-                            <outlet property="delegate" destination="oED-QF-ok8" id="TV8-41-N2A"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qV-hD-7gJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="YHe-4f-Te1" firstAttribute="centerX" secondItem="dOM-pE-yAO" secondAttribute="centerX" id="2ZI-yK-48Y"/>
+                            <constraint firstItem="dOM-pE-yAO" firstAttribute="centerX" secondItem="4cE-gU-ZLa" secondAttribute="centerX" id="3li-sr-0V9"/>
+                            <constraint firstItem="PcK-Av-hii" firstAttribute="bottom" secondItem="4cE-gU-ZLa" secondAttribute="bottom" constant="396" id="9B1-94-UaV"/>
+                            <constraint firstItem="PcK-Av-hii" firstAttribute="bottom" secondItem="YHe-4f-Te1" secondAttribute="bottom" constant="126" id="9Pa-Fc-Oup"/>
+                            <constraint firstItem="4cE-gU-ZLa" firstAttribute="top" secondItem="PcK-Av-hii" secondAttribute="top" id="E9A-Bk-U2z"/>
+                            <constraint firstItem="PcK-Av-hii" firstAttribute="bottom" secondItem="dOM-pE-yAO" secondAttribute="bottom" constant="320" id="JTQ-HH-4GV"/>
+                            <constraint firstItem="4cE-gU-ZLa" firstAttribute="trailing" secondItem="PcK-Av-hii" secondAttribute="trailing" id="JnS-6T-Hhn"/>
+                            <constraint firstItem="4cE-gU-ZLa" firstAttribute="leading" secondItem="PcK-Av-hii" secondAttribute="leading" id="QU3-dD-4vY"/>
+                            <constraint firstItem="dOM-pE-yAO" firstAttribute="leading" secondItem="PcK-Av-hii" secondAttribute="leading" constant="98" id="Yke-P6-84x"/>
+                            <constraint firstItem="dOM-pE-yAO" firstAttribute="top" secondItem="PcK-Av-hii" secondAttribute="top" constant="113" id="fa5-ta-R2B"/>
+                            <constraint firstItem="YHe-4f-Te1" firstAttribute="centerX" secondItem="4wp-47-sT4" secondAttribute="centerX" id="fcK-9Z-txh"/>
+                            <constraint firstItem="YHe-4f-Te1" firstAttribute="leading" secondItem="ON9-DG-Ddq" secondAttribute="leadingMargin" id="x1A-aQ-F6h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PcK-Av-hii"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDm-v0-8Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156.5" y="-823.5"/>
+            <point key="canvasLocation" x="1184.8" y="-829.83508245877067"/>
         </scene>
         <!--Pick Schedule View Controller-->
         <scene sceneID="Y6z-hG-RS3">
@@ -295,5 +334,7 @@
     </scenes>
     <resources>
         <image name="LogoPlaceHolder" width="440" height="433"/>
+        <image name="ProfileBackGround" width="775" height="581"/>
+        <image name="profileIcon" width="980" height="980"/>
     </resources>
 </document>
