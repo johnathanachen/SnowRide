@@ -6,8 +6,9 @@ target 'SnowRide' do
   use_frameworks!
 
   # Pods for SnowRide
-  pod ‘Firebase/Core’
-  pod 'Firebase/Auth’
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'Firebase/Database'
 
 end

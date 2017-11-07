@@ -116,7 +116,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-gU-ZLa">
                                 <rect key="frame" x="0.0" y="64" width="379" height="207"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-pE-yAO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-pE-yAO">
                                 <rect key="frame" x="98" y="177" width="183" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="3Ji-ob-fI0"/>
@@ -132,24 +132,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-4f-Te1">
-                                <rect key="frame" x="16" y="491" width="347" height="50"/>
+                                <rect key="frame" x="16" y="447" width="347" height="50"/>
                                 <color key="backgroundColor" red="0.1130518839" green="0.1049865261" blue="0.26296675209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4PE-39-UQ4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="tintColor" red="0.98031669860000004" green="0.97607129810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Search Trips"/>
+                                <state key="normal" title="SAVE"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtU-lK-Hyg">
-                                <rect key="frame" x="16" y="549" width="347" height="50"/>
+                                <rect key="frame" x="16" y="505" width="347" height="50"/>
                                 <color key="backgroundColor" red="0.6256684065" green="0.26313152909999998" blue="0.30483821030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YYI-ji-O2S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="tintColor" red="0.98031669860000004" green="0.97607129810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Book Trip"/>
+                                <state key="normal" title="BOOK TRIP"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,6 +173,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PcK-Av-hii"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Log out" id="ykH-rL-daj"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDm-v0-8Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,6 +351,6 @@
     <resources>
         <image name="LogoPlaceHolder" width="440" height="433"/>
         <image name="ProfileBackGround" width="775" height="581"/>
-        <image name="profileIcon" width="980" height="980"/>
+        <image name="profileIcon" width="1862" height="2400"/>
     </resources>
 </document>

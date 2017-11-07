@@ -1,5 +1,5 @@
 //
-//  LoginController.swift
+//  LoginVC.swift
 //  SnowRide
 //
 //  Created by Johnathan Chen on 10/24/17.
@@ -7,21 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginController: UIViewController  {
-    
+
+class LoginCVC: UIViewController  {
+    FIRApp.configure()
+    //variables
+    var databaseRef = Database.database().reference()
+    //outlets
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    // Placeholder to format view cells
-    let userDetails = [
-        "name",
-        "phoneNum",
-        "email",
-    ]
     
+    //actions
+    
+    //func
+   
 }
 
