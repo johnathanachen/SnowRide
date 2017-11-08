@@ -7,37 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DE8DFCBB84B05BC055D2D77 /* Pods_SnowRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63270DA31942842AA1A24261 /* Pods_SnowRide.framework */; };
-		B83784751FA13A9500E82E80 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */; };
-		B83784771FA13B6900E82E80 /* PickScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */; };
-		B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */; };
+		B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileVC.swift */; };
+		B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleVC.swift */; };
+		B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* TripsVC.swift */; };
 		B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */; };
-		B837847D1FA141F700E82E80 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847C1FA141F700E82E80 /* Model.swift */; };
+		B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847C1FA141F700E82E80 /* TripDataModel.swift */; };
 		B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30771FA00AB600903B24 /* AppDelegate.swift */; };
-		B83B307A1FA00AB600903B24 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30791FA00AB600903B24 /* LoginController.swift */; };
+		B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30791FA00AB600903B24 /* LoginVC.swift */; };
 		B83B307D1FA00AB600903B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B307B1FA00AB600903B24 /* Main.storyboard */; };
 		B83B307F1FA00AB700903B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83B307E1FA00AB700903B24 /* Assets.xcassets */; };
 		B83B30821FA00AB700903B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */; };
-		B9F7E5471FA1490A0003F982 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9F7E5461FA149090003F982 /* GoogleService-Info.plist */; };
+		B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63270DA31942842AA1A24261 /* Pods_SnowRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6853AD1BB7E93B08D0126533 /* Pods-SnowRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowRide.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide.release.xcconfig"; sourceTree = "<group>"; };
-		ACF034D5DBCE83A79C249BF6 /* Pods-SnowRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowRide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide.debug.xcconfig"; sourceTree = "<group>"; };
-		B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleViewController.swift; sourceTree = "<group>"; };
-		B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialMatchesTableViewController.swift; sourceTree = "<group>"; };
+		B83784741FA13A9500E82E80 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B83784761FA13B6900E82E80 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleVC.swift; sourceTree = "<group>"; };
+		B83784781FA13C2400E82E80 /* TripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVC.swift; sourceTree = "<group>"; };
 		B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMatchViewController.swift; sourceTree = "<group>"; };
-		B837847C1FA141F700E82E80 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B837847C1FA141F700E82E80 /* TripDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataModel.swift; sourceTree = "<group>"; };
 		B83B30741FA00AB600903B24 /* SnowRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83B30771FA00AB600903B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B83B30791FA00AB600903B24 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B83B30791FA00AB600903B24 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B83B307C1FA00AB600903B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B83B307E1FA00AB700903B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83B30811FA00AB700903B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83B30831FA00AB700903B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9F7E5461FA149090003F982 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,37 +41,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE8DFCBB84B05BC055D2D77 /* Pods_SnowRide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CA1382FFFD2E418898B261F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ACF034D5DBCE83A79C249BF6 /* Pods-SnowRide.debug.xcconfig */,
-				6853AD1BB7E93B08D0126533 /* Pods-SnowRide.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A2277436F6833B49D0E10FBD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				63270DA31942842AA1A24261 /* Pods_SnowRide.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B83B306B1FA00AB600903B24 = {
 			isa = PBXGroup;
 			children = (
 				B83B30761FA00AB600903B24 /* SnowRide */,
 				B83B30751FA00AB600903B24 /* Products */,
-				8CA1382FFFD2E418898B261F /* Pods */,
-				A2277436F6833B49D0E10FBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,17 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				B83B30771FA00AB600903B24 /* AppDelegate.swift */,
-				B83B30791FA00AB600903B24 /* LoginController.swift */,
-				B83784741FA13A9500E82E80 /* ProfileTableViewController.swift */,
-				B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */,
-				B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */,
+				B83B30791FA00AB600903B24 /* LoginVC.swift */,
+				B83784741FA13A9500E82E80 /* ProfileVC.swift */,
+				B83784761FA13B6900E82E80 /* PickScheduleVC.swift */,
+				B83784781FA13C2400E82E80 /* TripsVC.swift */,
+				B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */,
 				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
+				B837847C1FA141F700E82E80 /* TripDataModel.swift */,
 				B83B307B1FA00AB600903B24 /* Main.storyboard */,
 				B83B307E1FA00AB700903B24 /* Assets.xcassets */,
 				B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */,
 				B83B30831FA00AB700903B24 /* Info.plist */,
-				B9F7E5461FA149090003F982 /* GoogleService-Info.plist */,
-				B837847C1FA141F700E82E80 /* Model.swift */,
 			);
 			path = SnowRide;
 			sourceTree = "<group>";
@@ -113,12 +89,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B83B30861FA00AB700903B24 /* Build configuration list for PBXNativeTarget "SnowRide" */;
 			buildPhases = (
-				C7D345093A84456AC459DC08 /* [CP] Check Pods Manifest.lock */,
 				B83B30701FA00AB600903B24 /* Sources */,
 				B83B30711FA00AB600903B24 /* Frameworks */,
 				B83B30721FA00AB600903B24 /* Resources */,
-				27126639FAC3EB63B6AF11C9 /* [CP] Embed Pods Frameworks */,
-				B22C9F191441CFACCFDE2550 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83B30821FA00AB700903B24 /* LaunchScreen.storyboard in Resources */,
-				B9F7E5471FA1490A0003F982 /* GoogleService-Info.plist in Resources */,
 				B83B307F1FA00AB700903B24 /* Assets.xcassets in Resources */,
 				B83B307D1FA00AB600903B24 /* Main.storyboard in Resources */,
 			);
@@ -177,77 +149,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		27126639FAC3EB63B6AF11C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B22C9F191441CFACCFDE2550 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnowRide/Pods-SnowRide-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7D345093A84456AC459DC08 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SnowRide-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B83B30701FA00AB600903B24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B837847D1FA141F700E82E80 /* Model.swift in Sources */,
-				B83784771FA13B6900E82E80 /* PickScheduleViewController.swift in Sources */,
-				B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */,
-				B83B307A1FA00AB600903B24 /* LoginController.swift in Sources */,
+				B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */,
+				B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */,
+				B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */,
+				B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */,
+				B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */,
 				B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */,
-				B83784751FA13A9500E82E80 /* ProfileTableViewController.swift in Sources */,
+				B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */,
 				B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,11 +296,10 @@
 		};
 		B83B30871FA00AB700903B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACF034D5DBCE83A79C249BF6 /* Pods-SnowRide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnowRide/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -400,11 +312,10 @@
 		};
 		B83B30881FA00AB700903B24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6853AD1BB7E93B08D0126533 /* Pods-SnowRide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnowRide/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

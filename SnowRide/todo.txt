@@ -1,0 +1,64 @@
+BUGS
+- Decrementing the date by one day when editing trips
+
+GITHUB
+-Conflict need to merge
+
+Phone
+
+-Needs to remove dashes on backend
+
+respond to JSON (use postman! :D)
+- #index DONE
+- #show DONE
+- trips#create DONE
+- #update- DONE
+- #delete-DONE
+
+
+order trips on departsOn
+
+ERD- departsInThe for the actual time
+
+
+Flask server - CRUD one resource - trips
+
+Add Users -first, last, email, phone, password
+
+CRUD Users -/sign up(create get is the form post is where you create the user), /login, /profile(users show, to edit you can call settings)
+Associate trips
+Encrypt passwords
+
+SOMEDAY
+
+make separate return trips.
+
+
+add date picker to trips-form- DONE
+Fix mongoose error -DONE
+Style trips-show.hbs - render dates in english- DONE
+rename project: snowride-server- DONE
+fix navbar -DONE
+
+Respond to HTMl
+- trips#new DONE
+- trips#edit DONE
+- trips#create DONE
+- #index DONE
+- #show DONE
+- #update DONE
+- #delete DONE
+
+respond to JSON (use postman! :D)
+- #index DONE
+- #show DONE
+- trips#create DONE
+- #update- DONE
+- #delete-DONE
+
+Error handling
+- INDEX - DONE
+- SHOW -DONE
+- create DONE
+- update - DONE
+- delete - DONE
