@@ -7,35 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileVC.swift */; };
-		B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleVC.swift */; };
 		B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* TripsVC.swift */; };
 		B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */; };
 		B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847C1FA141F700E82E80 /* TripDataModel.swift */; };
-		B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30771FA00AB600903B24 /* AppDelegate.swift */; };
 		B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30791FA00AB600903B24 /* LoginVC.swift */; };
 		B83B307D1FA00AB600903B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B307B1FA00AB600903B24 /* Main.storyboard */; };
-		B83B307F1FA00AB700903B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83B307E1FA00AB700903B24 /* Assets.xcassets */; };
 		B83B30821FA00AB700903B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */; };
 		B9B6B2201FB3A54200BDAACB /* TripViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B6B21F1FB3A54200BDAACB /* TripViewCellModel.swift */; };
 		B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */; };
+		B9CD54AA1FB3C08D003F7C88 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9CD54A91FB3C08D003F7C88 /* Info.plist */; };
+		B9CD54AC1FB3C0BF003F7C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CD54AB1FB3C0BF003F7C88 /* AppDelegate.swift */; };
+		B9CD54AE1FB3C18A003F7C88 /* PickScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CD54AD1FB3C18A003F7C88 /* PickScheduleVC.swift */; };
+		B9CDD4941FB3C23F00F19BF5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */; };
+		B9D2CA271FB3BDA200001AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D2CA261FB3BDA200001AF7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B83784741FA13A9500E82E80 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		B83784761FA13B6900E82E80 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleVC.swift; sourceTree = "<group>"; };
 		B83784781FA13C2400E82E80 /* TripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVC.swift; sourceTree = "<group>"; };
 		B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMatchViewController.swift; sourceTree = "<group>"; };
 		B837847C1FA141F700E82E80 /* TripDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataModel.swift; sourceTree = "<group>"; };
 		B83B30741FA00AB600903B24 /* SnowRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B83B30771FA00AB600903B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83B30791FA00AB600903B24 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B83B307C1FA00AB600903B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B83B307E1FA00AB700903B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83B30811FA00AB700903B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83B30831FA00AB700903B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9B6B21F1FB3A54200BDAACB /* TripViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCellModel.swift; sourceTree = "<group>"; };
 		B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCell.swift; sourceTree = "<group>"; };
+		B9CD54A91FB3C08D003F7C88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CD54AB1FB3C0BF003F7C88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9CD54AD1FB3C18A003F7C88 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleVC.swift; sourceTree = "<group>"; };
+		B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B9D2CA261FB3BDA200001AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B83B30761FA00AB600903B24 /* SnowRide */,
+				B9D2CA261FB3BDA200001AF7 /* Assets.xcassets */,
 				B83B30751FA00AB600903B24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,18 +71,18 @@
 		B83B30761FA00AB600903B24 /* SnowRide */ = {
 			isa = PBXGroup;
 			children = (
-				B83B30771FA00AB600903B24 /* AppDelegate.swift */,
+				B9CD54AB1FB3C0BF003F7C88 /* AppDelegate.swift */,
 				B83B30791FA00AB600903B24 /* LoginVC.swift */,
-				B83784741FA13A9500E82E80 /* ProfileVC.swift */,
-				B83784761FA13B6900E82E80 /* PickScheduleVC.swift */,
+				B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */,
+				B9CD54AD1FB3C18A003F7C88 /* PickScheduleVC.swift */,
 				B83784781FA13C2400E82E80 /* TripsVC.swift */,
 				B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */,
 				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
 				B9B6B21F1FB3A54200BDAACB /* TripViewCellModel.swift */,
 				B837847C1FA141F700E82E80 /* TripDataModel.swift */,
 				B83B307B1FA00AB600903B24 /* Main.storyboard */,
-				B83B307E1FA00AB700903B24 /* Assets.xcassets */,
 				B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */,
+				B9CD54A91FB3C08D003F7C88 /* Info.plist */,
 				B83B30831FA00AB700903B24 /* Info.plist */,
 			);
 			path = SnowRide;
@@ -144,8 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CD54AA1FB3C08D003F7C88 /* Info.plist in Resources */,
 				B83B30821FA00AB700903B24 /* LaunchScreen.storyboard in Resources */,
-				B83B307F1FA00AB700903B24 /* Assets.xcassets in Resources */,
+				B9D2CA271FB3BDA200001AF7 /* Assets.xcassets in Resources */,
 				B83B307D1FA00AB600903B24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */,
+				B9CD54AE1FB3C18A003F7C88 /* PickScheduleVC.swift in Sources */,
 				B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */,
-				B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */,
+				B9CDD4941FB3C23F00F19BF5 /* ProfileVC.swift in Sources */,
 				B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */,
 				B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */,
 				B9B6B2201FB3A54200BDAACB /* TripViewCellModel.swift in Sources */,
 				B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */,
-				B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */,
-				B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */,
+				B9CD54AC1FB3C0BF003F7C88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +305,6 @@
 		B83B30871FA00AB700903B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnowRide/Info.plist;
@@ -310,14 +313,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcswifty.SnowRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B83B30881FA00AB700903B24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnowRide/Info.plist;
@@ -326,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcswifty.SnowRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

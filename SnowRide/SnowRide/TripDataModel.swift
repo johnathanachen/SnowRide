@@ -27,11 +27,12 @@ func matchDates() {
         }
     }
 }
-func matchDates2() {
-    for (departures) in tripList {
-                
-        
-    }
-}
+
+//func matchDates2() {
+//    for (departures) in tripList {
+//                
+//        
+//    }
+//}
 
 
