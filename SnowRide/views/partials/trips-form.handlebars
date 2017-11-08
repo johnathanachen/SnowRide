@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label for="Departure Date">Departure Date</label><br>
+  <input class="form-control" type=DATE  name="departsOn" value="{{formatTime trip.departsOn "YYYY-MM-DD"}}"/>
+</div>
+
+<div class="form-group">
+  <label for="returnDate">Return Date</label><br>
+  <input class="form-control" type=DATE  name="returnsOn" value="{{formatTime trip.returnsOn "YYYY-MM-DD"}}" />
+</div>
+<!-- BUTTON -->
+<p>
+    <button type="submit" class="btn btn-primary">Save Trip</button>
+    <a href="/" class="btn btn-primary">
+     Cancel</a>
+</p>
