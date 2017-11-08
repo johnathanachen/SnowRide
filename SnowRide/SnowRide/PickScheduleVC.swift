@@ -1,5 +1,5 @@
 //
-//  PickScheduleViewController.swift
+//  PickScheduleVC.swift
 //  SnowRide
 //
 //  Created by Johnathan Chen on 10/25/17.
@@ -8,19 +8,14 @@
 
 import UIKit
 
-class PickScheduleViewController: UIViewController {
+class PickScheduleVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Choose Trip Date"
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation

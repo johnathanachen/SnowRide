@@ -8,23 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784741FA13A9500E82E80 /* ProfileVC.swift */; };
-		B83784771FA13B6900E82E80 /* PickScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */; };
-		B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */; };
+		B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784761FA13B6900E82E80 /* PickScheduleVC.swift */; };
+		B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83784781FA13C2400E82E80 /* TripsVC.swift */; };
 		B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */; };
-		B837847D1FA141F700E82E80 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847C1FA141F700E82E80 /* Model.swift */; };
+		B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837847C1FA141F700E82E80 /* TripDataModel.swift */; };
 		B83B30781FA00AB600903B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30771FA00AB600903B24 /* AppDelegate.swift */; };
 		B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B30791FA00AB600903B24 /* LoginVC.swift */; };
 		B83B307D1FA00AB600903B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B307B1FA00AB600903B24 /* Main.storyboard */; };
 		B83B307F1FA00AB700903B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83B307E1FA00AB700903B24 /* Assets.xcassets */; };
 		B83B30821FA00AB700903B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */; };
+		B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B83784741FA13A9500E82E80 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleViewController.swift; sourceTree = "<group>"; };
-		B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialMatchesTableViewController.swift; sourceTree = "<group>"; };
+		B83784761FA13B6900E82E80 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleVC.swift; sourceTree = "<group>"; };
+		B83784781FA13C2400E82E80 /* TripsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVC.swift; sourceTree = "<group>"; };
 		B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMatchViewController.swift; sourceTree = "<group>"; };
-		B837847C1FA141F700E82E80 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B837847C1FA141F700E82E80 /* TripDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataModel.swift; sourceTree = "<group>"; };
 		B83B30741FA00AB600903B24 /* SnowRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83B30771FA00AB600903B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83B30791FA00AB600903B24 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		B83B307E1FA00AB700903B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83B30811FA00AB700903B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83B30831FA00AB700903B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +69,11 @@
 				B83B30771FA00AB600903B24 /* AppDelegate.swift */,
 				B83B30791FA00AB600903B24 /* LoginVC.swift */,
 				B83784741FA13A9500E82E80 /* ProfileVC.swift */,
-				B83784761FA13B6900E82E80 /* PickScheduleViewController.swift */,
-				B83784781FA13C2400E82E80 /* PotentialMatchesTableViewController.swift */,
+				B83784761FA13B6900E82E80 /* PickScheduleVC.swift */,
+				B83784781FA13C2400E82E80 /* TripsVC.swift */,
+				B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */,
 				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
-				B837847C1FA141F700E82E80 /* Model.swift */,
+				B837847C1FA141F700E82E80 /* TripDataModel.swift */,
 				B83B307B1FA00AB600903B24 /* Main.storyboard */,
 				B83B307E1FA00AB700903B24 /* Assets.xcassets */,
 				B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */,
@@ -151,9 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B837847D1FA141F700E82E80 /* Model.swift in Sources */,
-				B83784771FA13B6900E82E80 /* PickScheduleViewController.swift in Sources */,
-				B83784791FA13C2400E82E80 /* PotentialMatchesTableViewController.swift in Sources */,
+				B9CBE7CA1FB29786001EEF07 /* TripViewCell.swift in Sources */,
+				B837847D1FA141F700E82E80 /* TripDataModel.swift in Sources */,
+				B83784771FA13B6900E82E80 /* PickScheduleVC.swift in Sources */,
+				B83784791FA13C2400E82E80 /* TripsVC.swift in Sources */,
 				B83B307A1FA00AB600903B24 /* LoginVC.swift in Sources */,
 				B837847B1FA13C7100E82E80 /* NoMatchViewController.swift in Sources */,
 				B83784751FA13A9500E82E80 /* ProfileVC.swift in Sources */,

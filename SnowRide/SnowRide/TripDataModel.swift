@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+
+struct TripDate {
+    let departureDate: String
+    let returnDate: String
+}
