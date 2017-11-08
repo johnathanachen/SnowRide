@@ -10,6 +10,14 @@ import UIKit
 
 class PickScheduleVC: UIViewController {
 
+    @IBAction func departPicker(_ sender: UIDatePicker) {
+        
+    }
+    
+    
+    @IBAction func returnPicker(_ sender: UIDatePicker) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Choose Trip Date"
