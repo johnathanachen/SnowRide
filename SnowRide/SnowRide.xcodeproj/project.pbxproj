@@ -36,7 +36,7 @@
 		B9CD54AB1FB3C0BF003F7C88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B9CDD4991FB3C47E00F19BF5 /* TripsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableVC.swift; sourceTree = "<group>"; };
-		B9CDD49B1FB3C4E900F19BF5 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScheduleVC.swift; sourceTree = "<group>"; };
+		B9CDD49B1FB3C4E900F19BF5 /* PickScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PickScheduleVC.swift; path = ../PickScheduleVC.swift; sourceTree = "<group>"; };
 		B9D2CA261FB3BDA200001AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,8 +54,6 @@
 		B83B306B1FA00AB600903B24 = {
 			isa = PBXGroup;
 			children = (
-				B9CDD49B1FB3C4E900F19BF5 /* PickScheduleVC.swift */,
-				B9CDD4991FB3C47E00F19BF5 /* TripsTableVC.swift */,
 				B83B30761FA00AB600903B24 /* SnowRide */,
 				B9D2CA261FB3BDA200001AF7 /* Assets.xcassets */,
 				B83B30751FA00AB600903B24 /* Products */,
@@ -74,18 +72,28 @@
 			isa = PBXGroup;
 			children = (
 				B9CD54AB1FB3C0BF003F7C88 /* AppDelegate.swift */,
-				B83B30791FA00AB600903B24 /* LoginVC.swift */,
-				B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */,
+				B96C57411FB3D02D000A5CAA /* Profile */,
+				B9CDD49B1FB3C4E900F19BF5 /* PickScheduleVC.swift */,
+				B9CDD4991FB3C47E00F19BF5 /* TripsTableVC.swift */,
 				B9CBE7C91FB29786001EEF07 /* TripViewCell.swift */,
-				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
 				B9B6B21F1FB3A54200BDAACB /* TripViewCellModel.swift */,
 				B837847C1FA141F700E82E80 /* TripDataModel.swift */,
+				B837847A1FA13C7100E82E80 /* NoMatchViewController.swift */,
 				B83B307B1FA00AB600903B24 /* Main.storyboard */,
 				B83B30801FA00AB700903B24 /* LaunchScreen.storyboard */,
 				B9CD54A91FB3C08D003F7C88 /* Info.plist */,
 				B83B30831FA00AB700903B24 /* Info.plist */,
 			);
 			path = SnowRide;
+			sourceTree = "<group>";
+		};
+		B96C57411FB3D02D000A5CAA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B83B30791FA00AB600903B24 /* LoginVC.swift */,
+				B9CDD4931FB3C23F00F19BF5 /* ProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
