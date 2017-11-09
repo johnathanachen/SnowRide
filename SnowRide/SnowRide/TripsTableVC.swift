@@ -12,6 +12,7 @@ class TripsTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.reloadInputViews()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
