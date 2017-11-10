@@ -76,14 +76,15 @@ class PickScheduleVC: UIViewController {
         self.view.endEditing(true)
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        let tripsVC = segue.destination as? TripsTableVC
+        
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }

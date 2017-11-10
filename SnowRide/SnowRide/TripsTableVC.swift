@@ -10,9 +10,11 @@ import UIKit
 
 class TripsTableVC: UITableViewController {
 
+    var userTrips = [TripDate]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.reloadInputViews()
+//        self.reloadInputViews()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

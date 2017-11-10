@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class TripViewCell: UITableViewCell {
+    
+    @IBOutlet weak var departLabel: UILabel!
+    @IBOutlet weak var returnLabel: UILabel!
+    @IBOutlet weak var matchedWithLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}

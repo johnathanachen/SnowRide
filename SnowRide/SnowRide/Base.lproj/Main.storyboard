@@ -209,9 +209,6 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="tintColor" red="0.98031669860000004" green="0.97607129810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SEE TRIPS"/>
-                                <connections>
-                                    <segue destination="g3B-gK-VLN" kind="show" id="uJh-Xv-KJR"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="DepartOnTxt" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose departure date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgw-at-zZG" userLabel="DepartOnTxt">
                                 <rect key="frame" x="16" y="152" width="343" height="30"/>
@@ -261,6 +258,7 @@
                     <connections>
                         <outlet property="departOnTxt" destination="jgw-at-zZG" id="fSz-0W-M9I"/>
                         <outlet property="returnOnTxt" destination="Yj2-x1-lNl" id="p9s-SV-gJo"/>
+                        <segue destination="g3B-gK-VLN" kind="show" id="7f2-fP-T5v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeZ-SH-HLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,22 +274,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripViewCell" rowHeight="145" id="pYb-0v-PW9" customClass="TripViewCell" customModule="SnowRide">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TripViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripViewCell" rowHeight="145" id="pYb-0v-PW9" customClass="TripViewCell" customModule="SnowRide" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pYb-0v-PW9" id="nLS-Wt-Yhu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RETURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-FU-nZp">
-                                            <rect key="frame" x="16" y="41" width="345" height="29"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEPARTURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-nc-g3v">
+                                            <rect key="frame" x="16" y="4" width="345" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEPARTURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-nc-g3v">
-                                            <rect key="frame" x="16" y="4" width="345" height="29"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RETURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-FU-nZp">
+                                            <rect key="frame" x="16" y="41" width="345" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -308,7 +306,10 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="departDateLabel" destination="GTF-nc-g3v" id="DVg-az-Nmk"/>
+                                    <outlet property="departLabel" destination="GTF-nc-g3v" id="qeq-mT-fcq"/>
+                                    <outlet property="matchedWithLabel" destination="NBb-Dr-myb" id="JWN-2G-srL"/>
                                     <outlet property="returnDateLabel" destination="3CL-FU-nZp" id="V3Q-hj-oHy"/>
+                                    <outlet property="returnLabel" destination="3CL-FU-nZp" id="pww-0W-oJh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -320,7 +321,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7C-Ne-9H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608.8000000000002" y="-831.63418290854577"/>
+            <point key="canvasLocation" x="2812" y="-831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OeJ-5N-bvc">
