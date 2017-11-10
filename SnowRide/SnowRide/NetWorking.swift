@@ -124,10 +124,12 @@ class Networking {
         session.dataTask(with: request) { (data, res, err) in
             if let data = data {
                 switch resource {
-                case .createUser, .authUser, .editUser:
-                    print("do something")
-                case .createTrip, .getTrip, .editTrip:
-                    print("do something else")
+                case .createUser, .createTrip:
+                    print("POST request \(data)")
+                case .editUser, .editTrip:
+                    print("PATCH request \(data)")
+                case .authUser, .getTrip:
+                    print("GET request \(data)")
                 }
             }
         }.resume()
