@@ -21,16 +21,19 @@ import Foundation
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
+    case patch = "PATCH"
 }
 
 enum Resource {
-    case posts
-    case comments(postId: Int)
+    case user
+    case trip(userId: Int)
     
     // #1
     func httpMethod() -> HTTPMethod {
         switch self {
-        case .posts, .comments:
+        case .user:
+            return .get
+        case .trip(let userId):
             return .get
         }
     }
@@ -38,11 +41,17 @@ enum Resource {
     // #2
     func header(token: String) -> [String: String] {
         switch self {
-        case .posts, .comments:
+        case .user:
             return ["Accept": "application/json",
                     "Content-Type": "application/json",
                     "Authorization": "Bearer \(token)",
-                    "Host": "api.producthunt.com"
+                    "Host": "" // need api address
+                ]
+        case .trip(let userId):
+            return ["Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer \(token)",
+                "Host": "" // need api address
             ]
         }
     }
@@ -50,19 +59,19 @@ enum Resource {
     // #3
     func path() -> String {
         switch self {
-        case .posts:
-            return "/me/feed"
-        case .comments:
-            return "/comments"
+        case .user:
+            return "" // need API address for users
+        case .trip(let userId):
+            return "" // need API address for trips
         }
     }
     
     // #4
     func urlParameters() -> [String: String] {
         switch self {
-        case .comments(let postId):
-            return ["search[post_id]": String(postId)]
-        case .posts:
+        case .user:
+            return [:]
+        case .trip(let userId):
             return [:]
         }
     }
@@ -70,7 +79,9 @@ enum Resource {
     // #5
     func body() -> Data? {
         switch self {
-        case .posts, .comments:
+        case .user:
+            return nil
+        case .trip(let userId):
             return nil
         }
     }
@@ -79,7 +90,7 @@ enum Resource {
 
 class Networking {
     let session = URLSession.shared
-    let baseURL = "https://api.producthunt.com/v1/"
+    let baseURL = "" // need API address
     
     func fetch(resource: Resource, completion: @escaping ([Decodable]) -> ()) {
         let fullURL = baseURL + resource.path()
@@ -95,23 +106,16 @@ class Networking {
         
         let url = componets?.url
         var request = URLRequest(url: url!)
-        request.allHTTPHeaderFields = resource.header(token: "d11bcb361e17fc5272675f5d2fc9d33dbf20e6312019c0a50a7c30bd5d6b1ba6")
+        request.allHTTPHeaderFields = resource.header(token: "") // need token
         request.httpMethod = resource.httpMethod().rawValue
         
         session.dataTask(with: request) { (data, res, err) in
             if let data = data {
                 switch resource {
-                case .posts:
-                    let postList = try? JSONDecoder().decode(PostsLists.self, from: data)
-                    guard let posts = postList?.posts else { return }
-//                    print("do something")
-                    return completion(posts)
-                    
-                case .comments:
-                    let commentList = try? JSONDecoder().decode(CommentsList.self, from: data)
-                    guard let comments = commentList?.comments else { return }
-//                    print("do something else")
-                    return completion(comments)
+                case .user:
+                    print("do something")
+                case .trip(let userId):
+                    print("do something else")
                 }
             }
         }.resume()
