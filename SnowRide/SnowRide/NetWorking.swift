@@ -25,29 +25,41 @@ enum HTTPMethod: String {
 }
 
 enum Resource {
-    case user
-    case trip(userId: Int)
+    case createUser
+    case authUser
+    case editUser
+    case createTrip
+    case getTrip
+    case editTrip
     
     // #1
     func httpMethod() -> HTTPMethod {
         switch self {
-        case .user:
+        case .createUser, .createTrip:
+            return .post
+        case .authUser, .getTrip:
             return .get
-        case .trip(let userId):
-            return .get
+        case .editUser, .editTrip:
+            return .patch
         }
     }
     
     // #2
     func header(token: String) -> [String: String] {
         switch self {
-        case .user:
+        case .authUser, .getTrip:
             return ["Accept": "application/json",
                     "Content-Type": "application/json",
                     "Authorization": "Bearer \(token)",
                     "Host": "" // need api address
                 ]
-        case .trip(let userId):
+        case .createUser, .createTrip:
+            return ["Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer \(token)",
+                "Host": "" // need api address
+            ]
+        case .editUser, .editTrip:
             return ["Accept": "application/json",
                     "Content-Type": "application/json",
                     "Authorization": "Bearer \(token)",
@@ -59,9 +71,9 @@ enum Resource {
     // #3
     func path() -> String {
         switch self {
-        case .user:
+        case .createUser, .authUser, .editUser:
             return "" // need API address for users
-        case .trip(let userId):
+        case .createTrip, .getTrip, .editTrip:
             return "" // need API address for trips
         }
     }
@@ -69,9 +81,9 @@ enum Resource {
     // #4
     func urlParameters() -> [String: String] {
         switch self {
-        case .user:
+        case .createUser, .authUser, .editUser:
             return [:]
-        case .trip(let userId):
+        case .createTrip, .getTrip, .editTrip:
             return [:]
         }
     }
@@ -79,9 +91,9 @@ enum Resource {
     // #5
     func body() -> Data? {
         switch self {
-        case .user:
+        case .createUser, .authUser, .editUser:
             return nil
-        case .trip(let userId):
+        case .createTrip, .getTrip, .editTrip:
             return nil
         }
     }
@@ -112,9 +124,9 @@ class Networking {
         session.dataTask(with: request) { (data, res, err) in
             if let data = data {
                 switch resource {
-                case .user:
+                case .createUser, .authUser, .editUser:
                     print("do something")
-                case .trip(let userId):
+                case .createTrip, .getTrip, .editTrip:
                     print("do something else")
                 }
             }
